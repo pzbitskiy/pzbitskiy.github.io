@@ -43,6 +43,37 @@ input[type=number] {
     display: inline;
 }
 
+.grid-item {
+    background-color: white;
+}
+
+#colorPicker {
+    visibility: hidden;
+}
+
+#picker {
+    width: 50px;
+    display: block;
+    border: 1px solid gray;
+}
+
+.color-select-item {
+    display: inline-table;
+    width: 50px;
+    line-height: 30px;
+    padding: 2px 2px 2px 2px;
+    font-size: 150%;
+    border: 1px solid gray;
+}
+
+.unpressed {
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+}
+
+.pressed {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .5) inset;
+}
+
 @media screen and (max-width: 500px) {
     tr {
         height: 20px;

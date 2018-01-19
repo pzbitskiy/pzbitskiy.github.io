@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/2862201a25.js"></script>
 </head>
 <body>
     <h1>Lab: Pixel Art Maker</h1>
@@ -24,7 +25,18 @@
     </form>
 
     <h2>Pick A Color</h2>
-    <input type="color" id="colorPicker" value="#0000FF">
+    <div>
+        <div class="color-select-item unpressed">
+          <label id="picker">
+              <input type="color" id="colorPicker" value="#0000FF">
+          </label>
+        </div>
+        <div class="color-select-item unpressed">
+            <div id="pipette">
+                <i class="fa fa-eyedropper" aria-hidden="true"></i>
+          </div>
+        </div>
+    </div>
 
     <h2>Design Canvas</h2>
     <table id="pixel_canvas"></table>
